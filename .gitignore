@@ -1,0 +1,4 @@
+firmware/*.bin
+firmware/*.elf
+firmware/*.hex
+firmware/*.uf2
