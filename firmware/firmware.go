@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"machine"
 	"time"
 
@@ -72,7 +71,7 @@ func main() {
 		if bufIdx > 7 {
 			led = !led
 			board.LEDPin.Set(led)
-			fmt.Printf("%02x", buf)
+			machine.Serial.WriteByte(buf)
 			buf, bufIdx = 0, 0
 		}
 	}
